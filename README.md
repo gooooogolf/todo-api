@@ -7,4 +7,42 @@ Design and implement a deployable RESTful API backend that store the resource fo
  [Postman Collection](https://www.getpostman.com/collections/332acc0d825dca178e14 "Postman Collection")
 
 
+### How do I get set up? ###
 
+* Install Java 1.8+
+* Install Maven 3.x.x (with TAB settings)
+* Create system variable JAVA_HOME with the path of your java installation
+* Create system variable MAVEN_HOME with the path of your maven installation
+* Add JAVA_HOME/bin and MAVEN_HOME/bin to PATH system variable
+
+### To compile use this command ###
+
+```
+cd todo-api
+mvn clean install
+```
+
+### To run use this command ###
+
+```
+cd todo-api
+java -jar target/todo-api-0.0.1-SNAPSHOT.jar
+```
+
+### To check health status use this command ###
+```
+curl -X GET 'http://localhost:8080/health'
+
+------Response 200 OK------
+{
+  "status": "UP"
+}
+
+```
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+
+### Note ###
+When app started data will reset.
