@@ -33,16 +33,12 @@ java -jar target/todo-api-0.0.1-SNAPSHOT.jar
 ```
 curl -X GET 'http://localhost:8080/health'
 
-------Response 200 OK------
+------200 OK------
 {
   "status": "UP"
 }
 
 ```
-
-### Who do I talk to? ###
-
-* Repo owner or admin
 
 ### Note ###
 When app started data will reset.
