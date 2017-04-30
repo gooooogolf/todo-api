@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>todo-api</name>
-	<description>Section3: API assignment(40 points)</description>
+	<description>RESTful API backend that stores the resource for a simple 'to do' task list.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
