@@ -2,7 +2,6 @@ package com.scale360.todo.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-
 @Getter
 @Setter
 public class TaskDTO {
