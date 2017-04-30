@@ -40,14 +40,14 @@ public class TaskController {
 
 	@PutMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> updateTask(@PathVariable("id") Long id, @RequestBody TaskDTO taskDTO) {
-		taskService.updateTask(taskDTO);
+		taskService.updateTask(id, taskDTO);
 
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
 	@PatchMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> updateTaskStatus(@PathVariable("id") Long id, @RequestBody TaskDTO taskDTO) {
-		taskService.updateTaskStatus(taskDTO);
+		taskService.updateTaskStatus(id, taskDTO);
 
 		return new ResponseEntity<>(HttpStatus.OK);
 	}

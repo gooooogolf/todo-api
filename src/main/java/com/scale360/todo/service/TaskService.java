@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import com.scale360.todo.domain.Task;
 import com.scale360.todo.dto.TaskDTO;
@@ -40,7 +41,7 @@ public class TaskService {
 
 	public TaskDTO createTask(TaskDTO taskDTO) throws TaskDuplicateIdException {
 		Long taskId = taskDTO.getId();
-		if (taskRepository.exists(taskId)) {
+		if (null != taskId && taskRepository.exists(taskId)) {
 			throw new TaskDuplicateIdException(String.format(TASK_CONFLICT, taskId));
 		}
 		Task task = taskRepository.save(convertToEntity(taskDTO));
@@ -48,20 +49,18 @@ public class TaskService {
 		return convertToDTO(task);
 	}
 
-	public void updateTask(TaskDTO taskDTO) throws TaskNotFoundException {
-		Long taskId = taskDTO.getId();
-		Task currentTask = taskRepository.findOne(taskId);
+	public void updateTask(Long id, TaskDTO taskDTO) throws TaskNotFoundException {
+		Task currentTask = taskRepository.findOne(id);
 		if (null == currentTask) {
-			throw new TaskNotFoundException(String.format(TASK_NOT_FOUND, taskId));
+			throw new TaskNotFoundException(String.format(TASK_NOT_FOUND, id));
 		}
 		taskRepository.save(convertToEntity(taskDTO));
 	}
 
-	public void updateTaskStatus(TaskDTO taskDTO) throws TaskNotFoundException {
-		Long taskId = taskDTO.getId();
-		Task currentTask = taskRepository.findOne(taskId);
+	public void updateTaskStatus(Long id, TaskDTO taskDTO) throws TaskNotFoundException {
+		Task currentTask = taskRepository.findOne(id);
 		if (null == currentTask) {
-			throw new TaskNotFoundException(String.format(TASK_NOT_FOUND, taskId));
+			throw new TaskNotFoundException(String.format(TASK_NOT_FOUND, id));
 		}
 		currentTask.setStatus(taskDTO.getStatus());
 		taskRepository.save(currentTask);
@@ -85,6 +84,7 @@ public class TaskService {
 
 	private Task convertToEntity(TaskDTO taskDTO) {
 		Task task = new ModelMapper().map(taskDTO, Task.class);
+		task.setStatus(StringUtils.isEmpty(taskDTO.getStatus()) ? "pending" : taskDTO.getStatus());
 		
 		return task;
 	}
