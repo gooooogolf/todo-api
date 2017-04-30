@@ -28,5 +28,5 @@ public class Task {
 	private String detail;
 	
 	@Column(name = "status")
-	private String status = "pending";
+	private String status;
 }
