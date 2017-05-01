@@ -16,8 +16,9 @@ Design and implement a deployable RESTful API backend that store the resource fo
 * Create system variable JAVA_HOME with the path of your java installation
 * Create system variable MAVEN_HOME with the path of your maven installation
 * Add JAVA_HOME/bin and MAVEN_HOME/bin to PATH system variable
+[How to install Maven on Windows](https://www.mkyong.com/maven/how-to-install-maven-in-windows/ "How to install Maven on Windows")
 
-### To compile use this command ###
+### To build use this command ###
 
 ```
 cd todo-api
@@ -32,16 +33,16 @@ java -jar target/todo-api-0.0.1-SNAPSHOT.jar
 ```
 
 ### To build and run with docker ###
-1. build images with maven 
+1. Build docker image with maven 
 ```
 cd todo-api
 mvn package docker:build
 ```
-2. list docker images
+2. List of docker images
 ```
 docker images
 ```
-3. run your docker image
+3. Run your docker image
 ```
 docker run -p 8080:8080 -t scale360/todo-api
 ```
@@ -50,7 +51,7 @@ docker run -p 8080:8080 -t scale360/todo-api
 ```
 curl -X GET 'http://localhost:8080/health'
 
-------200 OK------
+------HTTP 1.1 200 OK------
 {
   "status": "UP"
 }
