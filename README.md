@@ -31,6 +31,21 @@ cd todo-api
 java -jar target/todo-api-0.0.1-SNAPSHOT.jar
 ```
 
+### To build and run with docker ###
+1. build images with maven 
+```
+cd todo-api
+mvn package docker:build
+```
+2. list docker images
+```
+docker images
+```
+3. run your docker image
+```
+docker run -p 8080:8080 -t scale360/todo-api
+```
+
 ### To check health status use this command ###
 ```
 curl -X GET 'http://localhost:8080/health'
