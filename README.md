@@ -16,6 +16,7 @@ Design and implement a deployable RESTful API backend that store the resource fo
 * Create system variable JAVA_HOME with the path of your java installation
 * Create system variable MAVEN_HOME with the path of your maven installation
 * Add JAVA_HOME/bin and MAVEN_HOME/bin to PATH system variable
+
 [How to install Maven on Windows](https://www.mkyong.com/maven/how-to-install-maven-in-windows/ "How to install Maven on Windows")
 
 ### To build use this command ###
