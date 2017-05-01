@@ -12,7 +12,7 @@ Design and implement a deployable RESTful API backend that store the resource fo
 ### How do I get set up? ###
 
 * Install Java 1.8+
-* Install Maven 3.x.x (with TAB settings)
+* Install Maven 3.x.x 
 * Create system variable JAVA_HOME with the path of your java installation
 * Create system variable MAVEN_HOME with the path of your maven installation
 * Add JAVA_HOME/bin and MAVEN_HOME/bin to PATH system variable
