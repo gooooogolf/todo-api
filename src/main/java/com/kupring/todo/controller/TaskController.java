@@ -24,36 +24,36 @@ public class TaskController {
 	private TaskService taskService;
 
 	@GetMapping(value = "/tasks")
-	public ResponseEntity<?> getTasks() {
-		return new ResponseEntity<>(taskService.getTasks(), HttpStatus.OK);
+	public ResponseEntity<?> getTasks() {		
+		return ResponseEntity.ok(taskService.getTasks());
 	}
 
 	@PostMapping(value = "/tasks")
 	public ResponseEntity<?> createTask(@RequestBody TaskDTO taskDTO) {
-		return new ResponseEntity<>(taskService.createTask(taskDTO), HttpStatus.CREATED);
+		return ResponseEntity.status( HttpStatus.CREATED).body(taskService.createTask(taskDTO));
 	}
 
 	@GetMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> getTask(@PathVariable("id") Long id) {
-		return new ResponseEntity<>(taskService.getTask(id), HttpStatus.OK);
+		return ResponseEntity.ok(taskService.getTask(id));
 	}
 
 	@PutMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> updateTask(@PathVariable("id") Long id, @RequestBody TaskDTO taskDTO) {
 		taskService.updateTask(id, taskDTO);
 
-		return new ResponseEntity<>(HttpStatus.OK);
+		return ResponseEntity.ok(null);
 	}
 
 	@PatchMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> updateTaskStatus(@PathVariable("id") Long id, @RequestBody TaskDTO taskDTO) {
 		taskService.updateTaskStatus(id, taskDTO);
-
-		return new ResponseEntity<>(HttpStatus.OK);
+		
+		return ResponseEntity.ok(null);
 	}
 
 	@DeleteMapping(value = "/tasks/{id}")
 	public ResponseEntity<?> deleteTask(@PathVariable("id") Long id) {
-		return new ResponseEntity<>(taskService.deleteTask(id), HttpStatus.OK);
+		return ResponseEntity.ok(taskService.deleteTask(id));
 	}
 }
