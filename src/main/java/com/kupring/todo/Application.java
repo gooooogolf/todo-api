@@ -1,4 +1,4 @@
-package com.scale360.todo;
+package com.kupring.todo;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

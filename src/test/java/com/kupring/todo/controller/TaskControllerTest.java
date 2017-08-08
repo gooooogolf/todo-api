@@ -1,4 +1,4 @@
-package com.scale360.todo.controller;
+package com.kupring.todo.controller;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -23,10 +23,11 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.scale360.todo.ApplicationTests;
-import com.scale360.todo.dto.TaskDTO;
-import com.scale360.todo.exception.TaskNotFoundException;
-import com.scale360.todo.service.TaskService;
+import com.kupring.todo.ApplicationTests;
+import com.kupring.todo.controller.TaskController;
+import com.kupring.todo.dto.TaskDTO;
+import com.kupring.todo.exception.TaskNotFoundException;
+import com.kupring.todo.service.TaskService;
 
 @RunWith(SpringRunner.class)
 public class TaskControllerTest {

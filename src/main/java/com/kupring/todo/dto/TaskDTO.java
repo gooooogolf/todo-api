@@ -1,4 +1,4 @@
-package com.scale360.todo.dto;
+package com.kupring.todo.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.scale360.todo.controller.advice;
+package com.kupring.todo.controller.advice;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -6,8 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.scale360.todo.exception.TaskDuplicateIdException;
-import com.scale360.todo.exception.TaskNotFoundException;
+import com.kupring.todo.exception.TaskDuplicateIdException;
+import com.kupring.todo.exception.TaskNotFoundException;
 
 @ControllerAdvice
 public class GlobalExceptionHandlingControllerAdvice {

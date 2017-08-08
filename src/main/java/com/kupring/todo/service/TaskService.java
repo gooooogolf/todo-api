@@ -1,4 +1,4 @@
-package com.scale360.todo.service;
+package com.kupring.todo.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.scale360.todo.domain.Task;
-import com.scale360.todo.dto.TaskDTO;
-import com.scale360.todo.exception.TaskDuplicateIdException;
-import com.scale360.todo.exception.TaskNotFoundException;
-import com.scale360.todo.repository.TaskRepository;
+import com.kupring.todo.domain.Task;
+import com.kupring.todo.dto.TaskDTO;
+import com.kupring.todo.exception.TaskDuplicateIdException;
+import com.kupring.todo.exception.TaskNotFoundException;
+import com.kupring.todo.repository.TaskRepository;
 
 @Service
 public class TaskService {

@@ -1,4 +1,4 @@
-package com.scale360.todo.exception;
+package com.kupring.todo.exception;
 
 public class TaskDuplicateIdException extends RuntimeException {
 

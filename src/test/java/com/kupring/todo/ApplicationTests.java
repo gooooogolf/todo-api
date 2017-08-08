@@ -1,4 +1,4 @@
-package com.scale360.todo;
+package com.kupring.todo;
 
 import java.lang.reflect.Method;
 
@@ -11,7 +11,7 @@ import org.springframework.web.method.annotation.ExceptionHandlerMethodResolver;
 import org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver;
 import org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod;
 
-import com.scale360.todo.controller.advice.GlobalExceptionHandlingControllerAdvice;
+import com.kupring.todo.controller.advice.GlobalExceptionHandlingControllerAdvice;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

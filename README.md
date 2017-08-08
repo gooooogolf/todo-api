@@ -45,7 +45,7 @@ docker images
 ```
 3. Run your docker image
 ```
-docker run -p 8080:8080 -t scale360/todo-api
+docker run -p 8080:8080 -t kupring/todo-api
 ```
 
 ### To check health status use this command ###

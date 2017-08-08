@@ -1,4 +1,4 @@
-package com.scale360.todo.domain;
+package com.kupring.todo.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
