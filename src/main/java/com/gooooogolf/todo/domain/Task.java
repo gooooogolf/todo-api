@@ -1,4 +1,4 @@
-package com.kupring.todo.domain;
+package com.gooooogolf.todo.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.kupring.todo.exception;
+package com.gooooogolf.todo.exception;
 
 public class TaskNotFoundException extends RuntimeException {
 

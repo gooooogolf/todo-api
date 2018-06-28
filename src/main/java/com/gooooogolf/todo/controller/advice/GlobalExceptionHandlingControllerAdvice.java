@@ -1,4 +1,4 @@
-package com.kupring.todo.controller.advice;
+package com.gooooogolf.todo.controller.advice;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -6,8 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.kupring.todo.exception.TaskDuplicateIdException;
-import com.kupring.todo.exception.TaskNotFoundException;
+import com.gooooogolf.todo.exception.TaskDuplicateIdException;
+import com.gooooogolf.todo.exception.TaskNotFoundException;
 
 @ControllerAdvice
 public class GlobalExceptionHandlingControllerAdvice {

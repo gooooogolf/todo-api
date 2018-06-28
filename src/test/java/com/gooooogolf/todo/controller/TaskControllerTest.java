@@ -1,4 +1,4 @@
-package com.kupring.todo.controller;
+package com.gooooogolf.todo.controller;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -23,11 +23,10 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.kupring.todo.ApplicationTests;
-import com.kupring.todo.controller.TaskController;
-import com.kupring.todo.dto.TaskDTO;
-import com.kupring.todo.exception.TaskNotFoundException;
-import com.kupring.todo.service.TaskService;
+import com.gooooogolf.todo.ApplicationTests;
+import com.gooooogolf.todo.dto.TaskDTO;
+import com.gooooogolf.todo.exception.TaskNotFoundException;
+import com.gooooogolf.todo.service.TaskService;
 
 @RunWith(SpringRunner.class)
 public class TaskControllerTest {

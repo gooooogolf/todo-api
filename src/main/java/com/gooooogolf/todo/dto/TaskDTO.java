@@ -1,4 +1,4 @@
-package com.kupring.todo.dto;
+package com.gooooogolf.todo.dto;
 
 import lombok.Getter;
 import lombok.Setter;

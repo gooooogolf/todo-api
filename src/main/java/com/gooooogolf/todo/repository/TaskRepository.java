@@ -1,8 +1,8 @@
-package com.kupring.todo.repository;
+package com.gooooogolf.todo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.kupring.todo.domain.Task;
+import com.gooooogolf.todo.domain.Task;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
 

@@ -1,4 +1,4 @@
-package com.kupring.todo.service;
+package com.gooooogolf.todo.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.kupring.todo.domain.Task;
-import com.kupring.todo.dto.TaskDTO;
-import com.kupring.todo.exception.TaskDuplicateIdException;
-import com.kupring.todo.exception.TaskNotFoundException;
-import com.kupring.todo.repository.TaskRepository;
+import com.gooooogolf.todo.domain.Task;
+import com.gooooogolf.todo.dto.TaskDTO;
+import com.gooooogolf.todo.exception.TaskDuplicateIdException;
+import com.gooooogolf.todo.exception.TaskNotFoundException;
+import com.gooooogolf.todo.repository.TaskRepository;
 
 @Service
 public class TaskService {

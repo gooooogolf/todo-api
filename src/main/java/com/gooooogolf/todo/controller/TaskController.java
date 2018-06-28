@@ -1,4 +1,4 @@
-package com.kupring.todo.controller;
+package com.gooooogolf.todo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kupring.todo.dto.TaskDTO;
-import com.kupring.todo.service.TaskService;
+import com.gooooogolf.todo.dto.TaskDTO;
+import com.gooooogolf.todo.service.TaskService;
 
 @RestController
 @RequestMapping("/api/v1")

@@ -1,4 +1,4 @@
-package com.kupring.todo;
+package com.gooooogolf.todo;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
